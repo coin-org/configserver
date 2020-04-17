@@ -3,7 +3,7 @@ node {
             sh 'echo test'
       }
       stage('build') {
-            sh 'mvn clean'
+            sh 'mvn --version'
       }
       
 }
