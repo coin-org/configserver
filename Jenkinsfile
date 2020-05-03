@@ -12,7 +12,9 @@ node {
          /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-         app = docker.build("coinorg/configserver")
+         //app = docker.build("coinorg/configserver")
+         sh 'sudo docker build -t test-1 .'   
+         sh 'sudo docker images'
      }
       
 }
